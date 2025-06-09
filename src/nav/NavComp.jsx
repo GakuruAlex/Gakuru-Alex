@@ -1,4 +1,5 @@
-import './NavComp.css'
+import './LeftNavComp.css'
+import './RightNavComp.css'
 const NavComp =(props) =>{
     return (
         <div className={props.classname}>
