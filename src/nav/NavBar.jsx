@@ -32,6 +32,20 @@ const NavBar = ()=> {
             name = "Certifications"
             link_rel = "#"
             />
+            <NavComp 
+            classname = {right}
+            icon = {labs_icon}
+            alt_name = "Labs"
+            name = "Labs"
+            link_rel = "#"
+            />
+            <NavComp 
+            classname = {right}
+            icon = {contact_icon}
+            alt_name = "Contact"
+            name = "Contact"
+            link_rel = "#"
+            />
         </div>
     )
 }
