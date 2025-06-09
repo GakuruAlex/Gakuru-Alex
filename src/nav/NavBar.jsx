@@ -6,10 +6,12 @@ import labs_icon from '../icons/labs.svg'
 import projects_icon from '../icons/projects.svg'
 import './NavBar.css'
 const NavBar = ()=> {
+    const left = "left_nav";
+    const right = "right_nav"
     return(
         <div className="nav_bar">
             <NavComp 
-            classname = "right_nav"
+            classname = {left}
             icon = {home_icon}
             alt_name = "home"
             name = "Home"
@@ -17,14 +19,14 @@ const NavBar = ()=> {
             />
 
             <NavComp 
-            classname = "right_nav"
+            classname = {left}
             icon = {projects_icon}
             alt_name = "Projects"
             name = "Projects"
             link_rel = "#"
             />
             <NavComp 
-            classname = "right_nav"
+            classname = {left}
             icon = {certificate_icon}
             alt_name = "Certifications"
             name = "Certifications"
