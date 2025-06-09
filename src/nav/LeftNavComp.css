@@ -4,7 +4,7 @@
     margin-top: 0px;
     display: flex;
 }
-ul {
+.left_nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -16,7 +16,7 @@ ul {
   float: left;
 }
 
-li {
+.left_nav li {
 /* Centers vertically */
 display: flex;
   margin-top: 3px;
@@ -24,7 +24,7 @@ display: flex;
 }
 
 
-li a {
+.left_nav li a {
   display: flex;  /* Flex to allow vertical centering */
   justify-content: center; 
   align-items: center;
@@ -35,16 +35,16 @@ li a {
 }
 
 
-li a:hover {
+.left_nav li a:hover {
   background-color: yellow;
   color: black;
 }
-li a:hover img {
+.left_nav li a:hover img {
   filter: brightness(0) saturate(100%);
 }
 
 
-li a:active {
+.left_nav li a:active {
  background-color: yellow;
  color: black;
 }
