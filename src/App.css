@@ -32,11 +32,12 @@ li a:hover {
   height: 18px;
   filter: grayscale(100%); /* Apply effects */
   transition: transform 0.3s ease-in-out; /* Smooth animation */
+filter: invert(50%);
 }
 
+
 .icons:hover {
-  transform: scale(1.2); /* Slight zoom on hover */
-  filter: grayscale(0%);
+filter: invert(100%);
 }
 
 .nav-item {
@@ -46,6 +47,6 @@ li a:hover {
 }
 
 .icons {
-  width: 24px; /* Adjust icon size */
-  height: 24px;
+  width: 20px; /* Adjust icon size */
+  height: 20x;
 }
