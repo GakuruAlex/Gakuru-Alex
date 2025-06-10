@@ -36,3 +36,7 @@
   outline: 2px solid #0056b3; /* Outline for focus (adjust color) */
   outline-offset: 2px; /* Space between outline and button */
 }
+#document-container{
+  margin: 0;
+  padding: 0;
+}
