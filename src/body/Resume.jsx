@@ -5,7 +5,7 @@ const Resume = ()=>{
  return (
   <>
         <div style={{ width: '50%', height: '85vh', border: '1px solid #ddd' }} className='pdf-viewer'>
-        <embed src="public/Alex_Gakuru_CV.pdf" width="100%" height="100%" type="application/pdf" />
+        <embed src="Gakuru-Alex/Alex_Gakuru_CV.pdf" width="100%" height="100%" type="application/pdf" />
       </div>
    
     </>
