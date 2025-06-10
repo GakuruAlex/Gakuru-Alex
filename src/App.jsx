@@ -5,14 +5,17 @@ import Projects from '/src/components/projects/Projects'
 import Contact from '/src/components/contact/Contact'
 import Labs from '/src/components/labs/Labs'
 import './App.css'
-
+import  homeIcon from './icons/home.svg';
 function App() {
   return (
     <Router>
-      <nav>
+      <nav >
         <ul>
           <li>
-            <NavLink to="/Gakuru-Alex/"   className={({isActive})=>(isActive ? "active_link": "inactive")}>Home</NavLink>
+            <NavLink to="/Gakuru-Alex/"  
+             className={({isActive})=>(isActive ? "active_link": "inactive")} >
+            <div className='nav-item'><img src={homeIcon} alt="Home"  className='icons'/>
+             <span>Home</span></div></NavLink>
           </li>
           <li>
             <NavLink to="/projects" className={({isActive})=>(isActive ? "active_link": "inactive")}>Projects</NavLink>
