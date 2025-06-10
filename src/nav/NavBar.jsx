@@ -5,7 +5,7 @@ import contact_icon from '../icons/contact.svg'
 import labs_icon from '../icons/labs.svg'
 import projects_icon from '../icons/projects.svg'
 import './NavBar.css'
-const NavBar = ()=> {
+const NavBar = ({navigate_to, current_page})=> {
     const left = "left_nav";
     const right = "right_nav"
     return(
@@ -15,7 +15,9 @@ const NavBar = ()=> {
             icon = {home_icon}
             alt_name = "home"
             name = "Home"
-            link_rel = "#"
+            page_key = "Home"
+            is_Active ={current_page === 'Home'}
+            navigate_to = {navigate_to}
             />
 
             <NavComp 
@@ -23,28 +25,37 @@ const NavBar = ()=> {
             icon = {projects_icon}
             alt_name = "Projects"
             name = "Projects"
-            link_rel = "#"
+            page_key = "Projects"
+            is_Active ={current_page === 'Projects'}
+            navigate_to = {navigate_to}
             />
             <NavComp 
             classname = {left}
             icon = {certificate_icon}
             alt_name = "Certifications"
             name = "Certifications"
-            link_rel = "#"
+            link_rel = "Certifications"
+            page_key = "Certifications"
+            is_Active ={current_page === 'Certifications'}
+            navigate_to = {navigate_to}
             />
             <NavComp 
             classname = {right}
             icon = {labs_icon}
             alt_name = "Labs"
             name = "Labs"
-            link_rel = "#"
+            page_key = "Labs"
+            is_Active ={current_page === 'Labs'}
+            navigate_to = {navigate_to}
             />
             <NavComp 
             classname = {right}
             icon = {contact_icon}
             alt_name = "Contact"
             name = "Contact"
-            link_rel = "#"
+            page_key = "Contact"
+            is_Active ={current_page === 'Contact'}
+            navigate_to = {navigate_to}
             />
         </div>
     )
