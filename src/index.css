@@ -1,0 +1,15 @@
+html{
+    height: 100%;
+}
+#root {
+    width: 90%; 
+    max-width: 1200px; /* Don't get wider than 1200px */
+    margin: 0 auto; /* Center it */
+    height: 90vh;
+}
+@media (max-width: 600px) {
+    #root {
+        flex-direction: column; /* Stack cards vertically on small screens */
+        align-items: center; /* Center them when stacked */
+    }
+}
