@@ -1,8 +1,8 @@
 .footer{
     display: flex;
     align-items: center;
-    margin-top: 39em;
-    height: 2.5em;
+    margin-top: 1vh;
+    height: 1.5em;
 }
 .footer ul, .footer li {
   list-style: none; /* Ensures no bullet points */
