@@ -1,41 +1,46 @@
-import { useState } from 'react'
-import NavBar from '/src/nav/NavBar'
-import Footer from '/src/footer/Footer'
+import { BrowserRouter as Router, Route, Routes, NavLink } from 'react-router-dom';
 import MainSection from '/src/body/MainSection'
 import Certifications from '/src/components/certifications/Certifications'
 import Projects from '/src/components/projects/Projects'
-
+import Contact from '/src/components/contact/Contact'
+import Labs from '/src/components/labs/Labs'
+import './App.css'
 
 function App() {
-   const [current_page, setCurrentPage] = useState('Home'); // Default to 'home'
-
-  // Function to handle navigation clicks
-  const navigate_to = (page) => {
-    setCurrentPage(page);
-  };
-
-  // Function to render the appropriate component based on currentPage state
-  const renderPage = () => {
-    switch (current_page) {
-      case 'Home':
-        return <MainSection />;
-      case 'Projects':
-        return <Projects />;
-      case 'Certifications':
-        return <Certifications />;
-      case 'Labs':
-        return <Labs />;
-      case 'Contact':
-        return <Contact />;
-    }
-  };
   return (
-    <>
-    <NavBar  current_page={current_page} navigate_to={navigate_to} />
-    {renderPage()}
-    <Footer />
-    </>
-  )
+    <Router>
+      <nav>
+        <ul>
+          <li>
+            <NavLink to="/Gakuru-Alex/"   className={({isActive})=>(isActive ? "active_link": "inactive")}>Home</NavLink>
+          </li>
+          <li>
+            <NavLink to="/projects" className={({isActive})=>(isActive ? "active_link": "inactive")}>Projects</NavLink>
+          </li>
+          <li>
+            <NavLink to="/certifications" className={({isActive})=>(isActive ? "active_link": "inactive")}>Certifications</NavLink>
+          </li>
+          <li>
+            <NavLink to="/labs" className={({isActive})=>(isActive ? "active_link": "inactive")}>Labs</NavLink>
+          </li>
+          <li>
+            <NavLink to="/contact" className={({isActive})=>(isActive ? "active_link": "inactive")}>Contact</NavLink>
+          </li>
+
+
+        </ul>
+      </nav>
+
+      <Routes>
+        <Route path="/Gakuru-Alex/" element={<MainSection />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/certifications" element={<Certifications />} />
+        <Route path="/labs" element={<Labs />} />
+        <Route path="/contact" element={<Contact />} />
+
+      </Routes>
+    </Router>
+  );
 
 }
 
