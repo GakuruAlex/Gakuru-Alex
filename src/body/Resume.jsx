@@ -1,5 +1,5 @@
 import './Resume.css'
-import CV from '../../public/Alex_Gakuru_CV.pdf'
+import CV from '/Alex_Gakuru_CV.pdf'
 const Resume = ()=>{
 
  return (
