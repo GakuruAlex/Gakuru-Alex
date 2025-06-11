@@ -3,6 +3,8 @@
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   margin-left: 5em;
+  width: 20em;
+  height: 37em;
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -18,4 +20,22 @@
 .card img{
     width:20em;
     height: 25em;
+}
+
+.card a{
+  text-decoration: none;
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #1f1e1e;
+  text-align: center;
+  cursor: pointer;
+  font-size: 18px;
+  
+}
+
+.card a:hover {
+  background-color: yellow;
+  color: black;
 }
