@@ -1,11 +1,11 @@
-html{
-    height: 100%;
-}
 #root {
-    width: 90%; 
-    max-width: 1200px; /* Don't get wider than 1200px */
+    width: 100%; 
+    max-width: 1800px; /* Don't get wider than 1200px */
     margin: 0 auto; /* Center it */
-    height: 90vh;
+    height: 87vh;
+    margin: 0;
+  padding: 0;
+  min-height: 80vh;
 }
 @media (max-width: 600px) {
     #root {
