@@ -13,9 +13,11 @@ button {
   background-color: yellow;
   width: 10em;
   border-radius: 5px;
+  margin-left: 10px;
+  margin-bottom: 5px;
 }
 .slideshow{
-    background-color: rgb(39, 37, 37);
+    background-color: #333;
 }
 
 .desc{
