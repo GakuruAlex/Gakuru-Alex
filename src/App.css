@@ -26,3 +26,27 @@ li a:hover {
 .active_link{
     background-color: #04AA6D;
 }
+
+.icons {
+  width: 18px;  /* Adjust size */
+  height: 18px;
+  filter: grayscale(100%); /* Apply effects */
+  transition: transform 0.3s ease-in-out; /* Smooth animation */
+filter: invert(50%);
+}
+
+
+.icons:hover {
+filter: invert(100%);
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Space between icon and text */
+}
+
+.icons {
+  width: 20px; /* Adjust icon size */
+  height: 20x;
+}
