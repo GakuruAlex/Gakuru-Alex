@@ -19,8 +19,7 @@ function App() {
       <nav >
         <ul>
           <li>
-            <NavLink to="/Gakuru-Alex/"  
-             className={({isActive})=>(isActive ? "active_link": "inactive")} >
+            <NavLink to="/Gakuru-Alex/"  className={({isActive})=>(isActive ? "active_link": "inactive")} >
             <div className='nav-item'><img src={homeIcon} alt="Home"  className='icons'/>
              <span>Home</span></div></NavLink>
           </li>
