@@ -5,7 +5,7 @@ const Contact = ()=> {
    
     return (
         <>
-        <h2>Contact</h2>
+        <h2>You can contact me through Linkedin or email</h2>
     <div className="card">
   <img src={AlexImage} alt="Alex" />
   <h1>Alex Gakuru</h1>
