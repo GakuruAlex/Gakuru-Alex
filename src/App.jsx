@@ -10,36 +10,39 @@ import certificateIcon from './icons/certificate.svg'
 import projectIcon from './icons/projects.svg'
 import contactIcon from './icons/contact.svg'
 import labsIcon from './icons/labs.svg'
+import { createBrowserHistory } from "history";
+
+const history = createBrowserHistory({ basename: "/Gakuru-Alex" });
 function App() {
   return (
-    <Router>
+    <Router history={history}>
       <nav >
         <ul>
           <li>
-            <NavLink to="/"  
+            <NavLink to="/Gakuru-Alex/"  
              className={({isActive})=>(isActive ? "active_link": "inactive")} >
             <div className='nav-item'><img src={homeIcon} alt="Home"  className='icons'/>
              <span>Home</span></div></NavLink>
           </li>
           <li>
-            <NavLink to="/projects" className={({isActive})=>(isActive ? "active_link": "inactive")}>
+            <NavLink to="/Gakuru-Alex/projects" className={({isActive})=>(isActive ? "active_link": "inactive")}>
               <div className='nav-item'><img src={projectIcon} alt="Home"  className='icons'/>
              <span>Projects</span></div></NavLink>
           </li>
           <li>
-            <NavLink to="/certifications" className={({isActive})=>(isActive ? "active_link": "inactive")}>
+            <NavLink to="/Gakuru-Alex/certifications" className={({isActive})=>(isActive ? "active_link": "inactive")}>
               <div className='nav-item'><img src={certificateIcon} alt="Home"  className='icons'/>
              <span>Certifications</span></div>
             </NavLink>
           </li>
           <li>
-            <NavLink to="/labs" className={({isActive})=>(isActive ? "active_link": "inactive")}>
+            <NavLink to="/Gakuru-Alex/labs" className={({isActive})=>(isActive ? "active_link": "inactive")}>
             <div className='nav-item'><img src={labsIcon} alt="Home"  className='icons'/>
              <span>Labs</span></div>
             </NavLink>
           </li>
           <li>
-            <NavLink to="/contact" className={({isActive})=>(isActive ? "active_link": "inactive")}>
+            <NavLink to="/Gakuru-Alex/contact" className={({isActive})=>(isActive ? "active_link": "inactive")}>
             <div className='nav-item'><img src={contactIcon} alt="Home"  className='icons'/>
              <span>Contact</span></div>
             </NavLink>
@@ -50,11 +53,11 @@ function App() {
       </nav>
 
       <Routes>
-        <Route path="/" element={<MainSection />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/certifications" element={<Certifications />} />
-        <Route path="/labs" element={<Labs />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/Gakuru-Alex/" element={<MainSection />} />
+        <Route path="/Gakuru-Alex/projects" element={<Projects />} />
+        <Route path="/Gakuru-Alex/certifications" element={<Certifications />} />
+        <Route path="/Gakuru-Alex/labs" element={<Labs />} />
+        <Route path="/Gakuru-Alex/contact" element={<Contact />} />
 
       </Routes>
     </Router>
