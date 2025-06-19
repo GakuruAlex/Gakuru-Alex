@@ -1,7 +1,17 @@
 /* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 
+@media screen and (min-width: 1240px) {
+  :root {
+    --fluid-screen: calc(var(--fluid-max-width) * 1px);
+        --min-screen-height: 600px; /* example value */
+  }
+}
+body{
+      min-height: var(--min-screen-height);
+}
+
 :root {
-  --fluid-min-width: 320;
+    --fluid-min-width: 320;
   --fluid-max-width: 1240;
 
   --fluid-screen: 100vw;
@@ -21,15 +31,6 @@
   --clr-illustration-highlight: #ff8906;
   --clr-illustration-secondary: #f25f4c;
   --clr-illustration-tertiary: #e53170;
-}
-
-@media screen and (min-width: 1240px) {
-  :root {
-    --fluid-screen: calc(var(--fluid-max-width) * 1px);
-  }
-}
-
-:root {
   --f--2-min: 12.50;
   --f--2-max: 12.80;
   --step--2: calc(
@@ -156,3 +157,5 @@ a:visited,
 .visited-link:visited {
   color: var(--clr-illustration-tertiary);
 }
+
+
