@@ -1,0 +1,158 @@
+/* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+:root {
+  --fluid-min-width: 320;
+  --fluid-max-width: 1240;
+
+  --fluid-screen: 100vw;
+  --fluid-bp: calc(
+    (var(--fluid-screen) - var(--fluid-min-width) / 16 * 1rem) /
+      (var(--fluid-max-width) - var(--fluid-min-width))
+  );
+    --clr-background: #0f0e17;
+  --clr-headline: #ffffff;
+  --clr-paragraph: #a7a9be;
+  --clr-button: #ff8906;
+  --clr-button-text: #ffffff;
+
+  /* === Illustration Colors === */
+  --clr-illustration-stroke: #000000;
+  --clr-illustration-main: #ffffff;
+  --clr-illustration-highlight: #ff8906;
+  --clr-illustration-secondary: #f25f4c;
+  --clr-illustration-tertiary: #e53170;
+}
+
+@media screen and (min-width: 1240px) {
+  :root {
+    --fluid-screen: calc(var(--fluid-max-width) * 1px);
+  }
+}
+
+:root {
+  --f--2-min: 12.50;
+  --f--2-max: 12.80;
+  --step--2: calc(
+    ((var(--f--2-min) / 16) * 1rem) + (var(--f--2-max) - var(--f--2-min)) *
+      var(--fluid-bp)
+  );
+
+  --f--1-min: 15.00;
+  --f--1-max: 16.00;
+  --step--1: calc(
+    ((var(--f--1-min) / 16) * 1rem) + (var(--f--1-max) - var(--f--1-min)) *
+      var(--fluid-bp)
+  );
+
+  --f-0-min: 18.00;
+  --f-0-max: 20.00;
+  --step-0: calc(
+    ((var(--f-0-min) / 16) * 1rem) + (var(--f-0-max) - var(--f-0-min)) *
+      var(--fluid-bp)
+  );
+
+  --f-1-min: 21.60;
+  --f-1-max: 25.00;
+  --step-1: calc(
+    ((var(--f-1-min) / 16) * 1rem) + (var(--f-1-max) - var(--f-1-min)) *
+      var(--fluid-bp)
+  );
+
+  --f-2-min: 25.92;
+  --f-2-max: 31.25;
+  --step-2: calc(
+    ((var(--f-2-min) / 16) * 1rem) + (var(--f-2-max) - var(--f-2-min)) *
+      var(--fluid-bp)
+  );
+
+  --f-3-min: 31.10;
+  --f-3-max: 39.06;
+  --step-3: calc(
+    ((var(--f-3-min) / 16) * 1rem) + (var(--f-3-max) - var(--f-3-min)) *
+      var(--fluid-bp)
+  );
+
+  --f-4-min: 37.32;
+  --f-4-max: 48.83;
+  --step-4: calc(
+    ((var(--f-4-min) / 16) * 1rem) + (var(--f-4-max) - var(--f-4-min)) *
+      var(--fluid-bp)
+  );
+
+  --f-5-min: 44.79;
+  --f-5-max: 61.04;
+  --step-5: calc(
+    ((var(--f-5-min) / 16) * 1rem) + (var(--f-5-max) - var(--f-5-min)) *
+      var(--fluid-bp)
+  );
+
+  --font-heading: 'Oswald', sans-serif;
+  --font-subheading: 'Abel', sans-serif;
+  --font-body: 'Karma', serif;
+
+  /* Base Font Sizes (Optional; override with fluid scale if using Utopia) */
+  --font-size-base: 1rem;
+  --font-size-sm: 0.875rem;
+  --font-size-lg: 1.25rem;
+}
+
+/* Headings */
+.heading-xl { font-size: var(--step-5); font-weight: 700; }
+.heading-lg { font-size: var(--step-4); font-weight: 700; }
+.heading-md { font-size: var(--step-3); font-weight: 600; }
+.heading-sm { font-size: var(--step-2); font-weight: 600; }
+
+/* Body Text */
+.body-lg { font-size: var(--step-1); font-weight: 400; }
+.body-base { font-size: var(--step-0); font-weight: 400; }
+.body-sm { font-size: var(--step--1); font-weight: 400; }
+.body-xs { font-size: var(--step--2); font-weight: 400; }
+
+.heading {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.subheading {
+  font-family: var(--font-subheading);
+  font-weight: 400;
+}
+
+.body-text {
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+/* === Background Colors === */
+.bg-dark { background-color: var(--clr-background); }
+.bg-accent { background-color: var(--clr-button); }
+.bg-highlight { background-color: var(--clr-illustration-secondary); }
+
+/* === Text Colors === */
+.text-white { color: var(--clr-headline); }
+.text-muted { color: var(--clr-paragraph); }
+.text-highlight { color: var(--clr-button); }
+
+/* === Button Base === */
+.btn {
+  background-color: var(--clr-button);
+  color: var(--clr-button-text);
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* === Hover & Visited States === */
+.btn:hover,
+.hover-accent:hover {
+  background-color: var(--clr-illustration-secondary);
+}
+
+a:visited,
+.visited-link:visited {
+  color: var(--clr-illustration-tertiary);
+}
