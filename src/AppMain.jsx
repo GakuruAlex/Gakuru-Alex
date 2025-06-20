@@ -1,14 +1,13 @@
 import { unstable_HistoryRouter as HistoryRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import { createBrowserHistory } from "history";
-
-import NavBar from "./pages/NavBar";
-
+import "./typography.css"
+import Profile from "./pages/Profile";
 const history = createBrowserHistory({ basename: "/Gakuru-Alex" });
 const AppMain=()=>{
     return (
         <HistoryRouter history={history}>
-        <NavBar />
+        <Profile />
         <Routes>
         <Route path="/" element={< HomePage />}/>
         </Routes>
