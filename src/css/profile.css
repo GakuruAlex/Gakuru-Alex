@@ -1,0 +1,133 @@
+.profile{
+    background-color: var(--primary-color);
+    height: 100%;
+    max-height: 97vh;
+    max-width: 25em;
+    width: 100%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 1em;
+    border: solid var(--text-color);
+
+}
+.profile-top{
+    height: 100%;
+    width: 100%;
+    max-width: 25em;
+    max-height: 50hv;
+    box-sizing: border-box;
+    margin: 0 0 1.5em 0 ;
+}
+.nav-bar{
+  width: 100%;
+  max-width: 25em;
+  display: flex;
+
+}
+.nav-bar ul{
+    text-decoration: none;
+    padding-left: 0;
+    list-style-type: none;
+    max-height: 2em;
+    height: 100%;
+}
+
+.nav-link{
+    float: left;
+    padding-left: 0.75em;
+    padding-right: 0.5em;
+    max-height: 3em;
+    height:100%;
+    border-color: var(--icon-color);
+    border-radius: 1px;
+
+
+}
+.nav-bar a{
+   font-family: var(--font-heading);
+   font-size: 20px;
+   display: inline-block;
+   text-decoration: none;
+     padding: 0.6em 1.2em;
+     background-color: var(--primary-color);
+     border-radius: 5px;
+     max-width: 5em;
+     width: 100%;
+     color: var(--text-color);
+     border: solid var(--border-color);
+}
+.nav-bar a:hover{
+    background-color: var(--icon-color);
+      border: solid var(--text-color);
+}
+.profile-pic{
+    padding-top: 1em;
+    padding-left: 2em;
+    margin-top: 2em;
+}
+.profile-pic img{
+    width: 100%;
+    max-width: 10em;
+    max-height: 10em;
+    margin-left: 3em;
+    height: 100%;
+    border-radius: 5em;
+}
+
+
+.profile h2,h3{
+    font-family: var(--font-heading);
+    margin-left: 3em;
+}
+.contact{
+     height: 100%;
+    max-height: 47vh;
+    max-width: 25em;
+    width: 100%;
+    background-color: var(--text-color);
+    margin-bottom: 5px;
+    display: inline-flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+}
+.contact-heading{
+    text-align: center;
+    font-family: var(--font-heading);
+    color: white;
+    padding: 0;
+    margin: 0;
+    margin-top: 1em;
+}
+.icon-link {
+  display: inline-flex;
+  align-items: center; /* Vertically centers text and icon */
+  gap: 0.5em; /* Spacing between icon and text */
+  text-decoration: none;
+}
+
+
+.contact a{
+    color: var(--primary-color);
+    text-decoration: none;
+    margin-left: 5em;
+    padding: 0.5em;
+       border: solid var(--border-color);
+       width: 100%;
+       max-width: 15em;
+       padding:0.25;
+       gap: 1em;
+       margin: 1em;
+    
+}
+.contact a:hover{
+    color:var(--icon-color);
+    border: solid var(--primary-color);
+}
+.contact img{
+    max-width: 1.7em;
+    height: 100%;
+    width: 100%;
+    max-height: 1.7em;
+}

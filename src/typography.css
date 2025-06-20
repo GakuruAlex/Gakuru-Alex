@@ -7,30 +7,26 @@
   }
 }
 body{
-      min-height: var(--min-screen-height);
+    height: 100%;
+  max-height: 97vh;
 }
 
 :root {
+  --primary-color: #FFFFFF;
+  --border-color:#FF99D5;
+  --text-color:#000000;
+  --icon-color:#fff000;
+  --button-color:#FF7AC8;
     --fluid-min-width: 320;
   --fluid-max-width: 1240;
+
 
   --fluid-screen: 100vw;
   --fluid-bp: calc(
     (var(--fluid-screen) - var(--fluid-min-width) / 16 * 1rem) /
       (var(--fluid-max-width) - var(--fluid-min-width))
   );
-    --clr-background: #0f0e17;
-  --clr-headline: #ffffff;
-  --clr-paragraph: #a7a9be;
-  --clr-button: #ff8906;
-  --clr-button-text: #ffffff;
 
-  /* === Illustration Colors === */
-  --clr-illustration-stroke: #000000;
-  --clr-illustration-main: #ffffff;
-  --clr-illustration-highlight: #ff8906;
-  --clr-illustration-secondary: #f25f4c;
-  --clr-illustration-tertiary: #e53170;
   --f--2-min: 12.50;
   --f--2-max: 12.80;
   --step--2: calc(
@@ -125,37 +121,6 @@ body{
   line-height: 1.6;
 }
 
-/* === Background Colors === */
-.bg-dark { background-color: var(--clr-background); }
-.bg-accent { background-color: var(--clr-button); }
-.bg-highlight { background-color: var(--clr-illustration-secondary); }
 
-/* === Text Colors === */
-.text-white { color: var(--clr-headline); }
-.text-muted { color: var(--clr-paragraph); }
-.text-highlight { color: var(--clr-button); }
-
-/* === Button Base === */
-.btn {
-  background-color: var(--clr-button);
-  color: var(--clr-button-text);
-  padding: 0.75rem 1.25rem;
-  border: none;
-  border-radius: 6px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-/* === Hover & Visited States === */
-.btn:hover,
-.hover-accent:hover {
-  background-color: var(--clr-illustration-secondary);
-}
-
-a:visited,
-.visited-link:visited {
-  color: var(--clr-illustration-tertiary);
-}
 
 
