@@ -1,9 +1,9 @@
 import '../typography.css'
+import Resume from "./Resume.jsx"
 const HomePage = () => {
 return( <>
-<div className="bg-dark">
-<p>Hello World</p>
-</div>
+<Resume/>
+
 </>)
 }
 

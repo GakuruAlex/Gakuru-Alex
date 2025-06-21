@@ -1,13 +1,82 @@
 .profile{
     background-color: var(--primary-color);
     height: 100%;
-    max-height: 97vh;
+    max-height: 93.5vh;
     max-width: 25em;
     width: 100%;
     border-radius: 10px;
     box-sizing: border-box;
     margin: 1em;
     border: solid var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+}
+@media (max-width: 800px) {
+  .profile {
+    flex-direction: column;
+    max-width: 15.5em;
+    max-height: 49em;
+  }
+  .profile-pic > img{
+    width: 100%;
+    max-width: 1.5em;
+    max-height: 1.5em;
+    margin-left: 0;
+    height: 100%;
+    border-radius: 0.5em;
+}
+.nav-bar{
+  width: 100%;
+  max-width: 15.5em;
+  display: flex;
+
+}
+.profile-top{
+    height: 100%;
+    width: 100%;
+    max-width: 15.5em;
+    max-height: 25hv;
+    box-sizing: border-box;
+    margin: 0 0 .5em 0 ;
+}
+
+
+
+.contact a{
+    color: var(--primary-color);
+    text-decoration: none;
+    margin-left: 5em;
+    padding: 0.5em;
+       border: solid var(--border-color);
+       width: 100%;
+       max-width: 5em;
+       padding:0.2;
+       gap: 0;
+       margin: 0;
+    
+}
+.contact{
+     height: 100%;
+    max-height: 47vh;
+    max-width: 10em;
+    width: 100%;
+    background-color: var(--text-color);
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+}
+.icon-link {
+  display: flex;
+  align-items: center; /* Vertically centers text and icon */
+  gap: 0.5em; /* Spacing between icon and text */
+  text-decoration: none;
+}
+
 
 }
 .profile-top{
@@ -67,11 +136,11 @@
 }
 .profile-pic img{
     width: 100%;
-    max-width: 10em;
-    max-height: 10em;
+    max-width: 10.5em;
+    max-height: 10.5em;
     margin-left: 3em;
     height: 100%;
-    border-radius: 5em;
+    border-radius: 7em;
 }
 
 

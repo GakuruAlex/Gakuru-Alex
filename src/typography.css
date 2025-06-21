@@ -1,17 +1,8 @@
 /* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 
-@media screen and (min-width: 1240px) {
-  :root {
-    --fluid-screen: calc(var(--fluid-max-width) * 1px);
-        --min-screen-height: 600px; /* example value */
-  }
-}
-body{
-    height: 100%;
-  max-height: 97vh;
-}
-
 :root {
+  display: flex;
+  flex-direction: row;
   --primary-color: #FFFFFF;
   --border-color:#FF99D5;
   --text-color:#000000;
@@ -19,7 +10,6 @@ body{
   --button-color:#FF7AC8;
     --fluid-min-width: 320;
   --fluid-max-width: 1240;
-
 
   --fluid-screen: 100vw;
   --fluid-bp: calc(

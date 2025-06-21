@@ -1,10 +1,10 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './typography.css'
-import AppMain from "./AppMain"
+import App from "./App"
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-  <AppMain/>
+  <App/>
   </StrictMode>,
 )
