@@ -1,0 +1,20 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    background-color: orange;
+    width: 93.5em;
+    height: 96hv;
+    
+    
+    
+}
+
+.content{
+    align-items: end;
+    width: 100%;
+}
+.profile-container{
+    width:55em;
+    
+    height: 80hv;
+}
