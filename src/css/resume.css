@@ -1,16 +1,11 @@
 .container{
     display: flex;
     flex-direction: row;
-    background-color: orange;
     width: 93.5em;
-    height: 96hv;
+    height: 94hv;
     gap: 2px;
     scroll-behavior: smooth;
     overflow: auto;
-    
-    
-    
-    
 }
 
 .content{
@@ -25,7 +20,31 @@
 .profile-container{
     width:38em;
     
-    height: 80hv;
+    height: 92hv;
+}
+
+.professional-summary{
+    max-height: 8hv;
+max-width: 64.85em;
+height: 10%;
+width: 100%;
+color:var(--text-color);
+margin: 15px;
+border: solid var(--text-color);
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+}
+.professional-summary-title{
+    font-family: var(--font-heading);
+    margin-left: var(--left-margin);
+    margin-bottom: 0;
+    margin-top: 2.5px;
+}
+.professional-summary-body{
+    font-family: var(--font-subheading);
+    margin-left: var(--left-margin);
+    margin-bottom: 0;
 }
 
 .education{
@@ -48,6 +67,7 @@ flex-direction: column;
     float: center;
     margin-left: var(--left-margin);
     font-family: var(--font-heading);
+    margin-top: 10px;
 }
 .education > div{
     font-family: var(--font-subheading);
@@ -63,4 +83,20 @@ flex-direction: column;
     margin-left: var(--left-margin);
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.professional-experience{
+    margin-left: var(--left-margin);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 64.85em;
+    height: 62.5%;
+    border: solid var(--text-color);
+    border-radius: 10px;
+}
+
+.work-experience-title{
+    margin-top: 5px;
+    margin-left: var(--left-margin);
 }
