@@ -10,6 +10,7 @@
   --button-color:#FF7AC8;
     --fluid-min-width: 320;
   --fluid-max-width: 1240;
+  --left-margin: 10px;
 
   --fluid-screen: 100vw;
   --fluid-bp: calc(

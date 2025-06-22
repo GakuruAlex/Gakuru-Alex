@@ -8,7 +8,14 @@ const Resume = ()=>{
         
         <div className="profile-container"><Profile/></div>
         <div className="content">
-        <p>Hello</p>
+        <div className="education">
+            <h2>Education</h2>
+            <div> <p>Karatina University</p>
+                 <p className="degree-date">Aug 2017 -  Dec 2021</p>
+            </div>
+           
+            <p className="degree-course">BSc in Computer Science</p>
+        </div>
         </div>
         </div>
         </>

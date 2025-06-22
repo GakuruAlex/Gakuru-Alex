@@ -4,17 +4,63 @@
     background-color: orange;
     width: 93.5em;
     height: 96hv;
+    gap: 2px;
+    scroll-behavior: smooth;
+    overflow: auto;
+    
     
     
     
 }
 
 .content{
-    align-items: end;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     width: 100%;
+    background-color: var(--primary-color);
+    
+
 }
 .profile-container{
-    width:55em;
+    width:38em;
     
     height: 80hv;
+}
+
+.education{
+max-height: 8hv;
+max-width: 64.85em;
+height: 15%;
+
+width: 100%;
+color:var(--text-color);
+margin: 15px;
+border: solid var(--text-color);
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+
+}
+.education h2{
+    margin-top: 0;
+    margin-bottom: 0;
+    float: center;
+    margin-left: var(--left-margin);
+    font-family: var(--font-heading);
+}
+.education > div{
+    font-family: var(--font-subheading);
+    display: flex;
+    flex-direction: row;
+    gap: 40em;
+    margin-left: var(--left-margin);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.degree-course{
+    font-family: var(--font-subheading);
+    margin-left: var(--left-margin);
+    margin-top: 0;
+    margin-bottom: 0;
 }
