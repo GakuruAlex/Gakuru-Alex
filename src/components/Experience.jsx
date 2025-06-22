@@ -1,8 +1,10 @@
-const Experience = ({title, duration, duties, title_class}) =>{
+import "../css/experience.css"
+
+const Experience = ({title, duration, duties, title_class, location}) =>{
 return (
     
         <div className="work-experience-body">
-                    <div className={title_class}>
+                <div className={title_class}>
                         <div className="title-duration">
                             <h2>{title}</h2>
                              <p>{duration}</p>
@@ -12,16 +14,17 @@ return (
                             {location}
                         </p>
 
-                        <ul>
+                        <ul className="duties">
                         {
-                            duties.forEach(duty => {
-                                <li>{duty}</li>
-                            })
+                            duties.map((duty, index)=>(
+                                <li key={index}>{duty}</li>
+                            ))
                         }
+                        
                         </ul>
 
                         
-                    </div>
+                </div>
         </div>
 )
 

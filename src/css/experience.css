@@ -1,0 +1,29 @@
+.work-experience-body{
+    display: flex;
+    flex-direction: column;
+    margin-left: var(--left-margin);
+    margin-bottom: 0;
+}
+.title-duration h2{
+    font-family: var(--font-subheading);
+    font-size: 20px;
+    margin-bottom: 0;
+    padding: 0;
+}
+.title-duration{
+    display: flex;
+    flex-direction: row;
+    gap: 30em;
+    margin-left: var(--left-margin);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.moe-experience{
+    margin-top: 0;
+    padding: 0;
+}
+
+.title-duration p{
+    margin: 0;
+    padding: 0;
+}
