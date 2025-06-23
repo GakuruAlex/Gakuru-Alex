@@ -1,39 +1,42 @@
+
+
 .container{
     display: flex;
     flex-direction: row;
     width: 93.5em;
-    height: 94hv;
-    gap: 2px;
-    scroll-behavior: smooth;
-    overflow: auto;
+    height: 97vh;
+    gap: 1px;
+    padding: 0;
+
 }
 
 .content{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     width: 100%;
-    background-color: var(--primary-color);
-    
+    background-color: var(--text-color);
+    padding: 0;
 
 }
 .profile-container{
     width:38em;
     
-    height: 92hv;
+    height: 92vh;
 }
 
 .professional-summary{
-    max-height: 8hv;
+    background-color: var(--primary-color);
+    max-height: 10vh;
 max-width: 64.85em;
-height: 10%;
 width: 100%;
 color:var(--text-color);
-margin: 15px;
+margin-top: 15px;
+margin-left: 5px;
 border: solid var(--text-color);
 border-radius: 10px;
 display: flex;
 flex-direction: column;
+
 }
 .professional-summary-title{
     font-family: var(--font-heading);
@@ -48,17 +51,18 @@ flex-direction: column;
 }
 
 .education{
-max-height: 8hv;
+max-height: 15vh;
 max-width: 64.85em;
-height: 15%;
+
 
 width: 100%;
 color:var(--text-color);
-margin: 15px;
+margin: 5px 5px 5px 5px;
 border: solid var(--text-color);
 border-radius: 10px;
 display: flex;
 flex-direction: column;
+background-color: var(--primary-color);
 
 }
 .education h2{
@@ -67,7 +71,7 @@ flex-direction: column;
     float: center;
     margin-left: var(--left-margin);
     font-family: var(--font-heading);
-    margin-top: 10px;
+    margin-top: 5px;
 }
 .education > div{
     font-family: var(--font-subheading);
@@ -86,17 +90,27 @@ flex-direction: column;
 }
 
 .professional-experience{
+    background-color: var(--primary-color);
     margin-left: var(--left-margin);
+    margin-right:0 ;
     display: flex;
     flex-direction: column;
     width: 100%;
     max-width: 64.85em;
-    height: 62.5%;
+    height: 65.5vh;
     border: solid var(--text-color);
     border-radius: 10px;
+    margin: 5px;
+    overflow-y: auto;
+
+    
 }
 
 .work-experience-title{
     margin-top: 5px;
     margin-left: var(--left-margin);
+    margin-bottom: 0;
+    font-family: var(--font-heading);
+    font-size: 20px;
+    color: var(--primary-color);
 }
