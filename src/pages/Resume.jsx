@@ -31,10 +31,24 @@ const Resume = ()=>{
                      "Successfully installed and configured 50+ new hardware devices (e.g., computers, printers, projectors) across various departments annually.",
                     " Completed software rollouts to 20+ users within 2 hours of request.",
                     "Ensured 99% uptime for all CCTV recording and monitoring systems through proactive maintenance.",
-                    "Resolved an average of 15 software-related issues per week for end-users."
+                    "Resolved an average of 15 software-related issues per week for end-users.",
                 ]
             }
 
+            />,
+            <Experience 
+            title="CynteQ Technologies"
+            cadre="ICT Officer"
+            title_class="cynteq-experience"
+            duration="Aug 2018 - June 2021"
+            location ="Nairobi, Kenya"
+            duties ={
+                [
+                     "Maintained 99.9% network uptime for critical business operations.",
+                     "Oversaw the installation of 10 new CCTV cameras, expanding surveillance coverage by 25%.",
+                     "Maintained an average hardware setup time of under 30 minutes per workstation.",
+
+            ]}
             />
         ]
     return (
