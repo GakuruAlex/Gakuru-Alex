@@ -1,8 +1,10 @@
+
+
 .container{
     display: flex;
     flex-direction: row;
     width: 93.5em;
-    height: 94hv;
+    height: 97vh;
     gap: 1px;
     padding: 0;
 
@@ -19,14 +21,13 @@
 .profile-container{
     width:38em;
     
-    height: 92hv;
+    height: 92vh;
 }
 
 .professional-summary{
     background-color: var(--primary-color);
-    max-height: 8hv;
+    max-height: 10vh;
 max-width: 64.85em;
-height: 10%;
 width: 100%;
 color:var(--text-color);
 margin-top: 15px;
@@ -50,9 +51,9 @@ flex-direction: column;
 }
 
 .education{
-max-height: 8hv;
+max-height: 15vh;
 max-width: 64.85em;
-height: 15%;
+
 
 width: 100%;
 color:var(--text-color);
@@ -96,7 +97,7 @@ background-color: var(--primary-color);
     flex-direction: column;
     width: 100%;
     max-width: 64.85em;
-    height: 60.5%;
+    height: 65.5vh;
     border: solid var(--text-color);
     border-radius: 10px;
     margin: 5px;
