@@ -6,18 +6,21 @@
 }
 .title-duration h2{
     font-family: var(--font-subheading);
-    font-size: 17px;
+    font-size: var(--font-subheading-size);
     margin-bottom: 0;
     padding: 0;
 }
 .title-duration{
     display: flex;
     flex-direction: row;
-    gap: 30em;
+    gap: 37em;
     margin-left: var(--left-margin);
     margin-top: 0;
     margin-bottom: 0;
     padding: 0;
+    font-family: var(--font-subheading);
+    font-size: var(--font-subheading-size);
+
 }
 .moe-experience{
     margin-right: 5px;
@@ -30,9 +33,9 @@
 }
 
 .title-duration p{
-    margin: 0;
+    margin: 5px 0 0 0;
     padding: 0;
-    font-size: 18px;
+    font-size: var(--font-subheading-size);
 }
 
 .location{
@@ -40,5 +43,15 @@
     font-family: var(--font-subheading);
 }
 .duties{
-    font-size: 20px;
+    font-size: var(--font-subheading-size);
+}
+.cadre{
+    margin-left: var(--left-margin);
+}
+.moh-experience{
+    padding: 0;
+    
+    border-bottom: solid var(--border-color);
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
 }
