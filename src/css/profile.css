@@ -159,6 +159,7 @@
     flex-direction: column;
     box-sizing: border-box;
     border-radius: 5px;
+    border: solid var(--primary-color);
 
 }
 .contact-heading{
