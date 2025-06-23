@@ -12,7 +12,7 @@ const Profile = () => {
             <nav className="nav-bar">
                 <ul>
             <li className="nav-link"><NavLink to="/Gakuru-Alex" >AlexGakuru</NavLink></li>
-           <li className="nav-link"><NavLink to="/certifications">Certifications</NavLink></li>
+           <li className="nav-link"><NavLink to="/Gakuru-Alex/certifications">Certifications</NavLink></li>
                 </ul>
             </nav>
             <div className="profile-pic">
