@@ -13,7 +13,7 @@
 .title-duration{
     display: flex;
     flex-direction: row;
-    gap: 33em;
+    gap: 30em;
     margin-left: var(--left-margin);
     margin-top: 0;
     margin-bottom: 0;

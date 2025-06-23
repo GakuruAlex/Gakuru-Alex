@@ -60,8 +60,9 @@ const Resume = ()=>{
                 </div>
                 <p className="degree-course"> Degree: BSc in Computer Science</p>
             </div>
+            <h2 className="work-experience-title">Work Experience</h2>
+
             <div className="professional-experience">
-                <h2 className="work-experience-title">Work Experience:</h2>
                 
                     {experiences.map((experience, index) =>(
                         <div key={index}>
