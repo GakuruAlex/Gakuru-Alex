@@ -1,6 +1,6 @@
 import "../css/experience.css"
 
-const Experience = ({title, duration, duties, title_class, location}) =>{
+const Experience = ({title, duration, duties, title_class, location, cadre}) =>{
 return (
     
         <div className="work-experience-body">
@@ -10,7 +10,8 @@ return (
                              <p>{duration}</p>
 
                         </div>
-                        <p>
+                        <p className="cadre">{cadre}</p>
+                        <p className="location">
                             {location}
                         </p>
 
