@@ -8,7 +8,8 @@ const Resume = ()=>{
                 title="State Department for Basic Education"
                 title_class= "moe-experience"
                 duration= "May 2024 - May 2025"
-                location = "Naivasha"
+                location = "Naivasha, Kenya"
+                cadre ="Information Communication technology Personnel"
                 duties = {[
 
                     "Trained teachers from 30 primary schools on how to use  NetSupport in teaching.",
@@ -19,6 +20,22 @@ const Resume = ()=>{
                     "Resolved over 100 first-line ICT support requests for staff."
                 ]}
             />,
+            <Experience
+            title=" Naivsaha Sub-County Referral Hospital"
+            cadre = "ICT Officer"
+            title_class="moh-experience"
+            duration="June 2021 - Dec 2021"
+            location="Naivasha, Kenya"
+            duties = {
+                [
+                     "Successfully installed and configured 50+ new hardware devices (e.g., computers, printers, projectors) across various departments annually.",
+                    " Completed software rollouts to 20+ users within 2 hours of request.",
+                    "Ensured 99% uptime for all CCTV recording and monitoring systems through proactive maintenance.",
+                    "Resolved an average of 15 software-related issues per week for end-users."
+                ]
+            }
+
+            />
         ]
     return (
 
