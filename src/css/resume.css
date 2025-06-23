@@ -12,7 +12,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: var(--primary-color);
+    background-color: var(--text-color);
     padding: 0;
 
 }
@@ -23,6 +23,7 @@
 }
 
 .professional-summary{
+    background-color: var(--primary-color);
     max-height: 8hv;
 max-width: 64.85em;
 height: 10%;
@@ -60,6 +61,7 @@ border: solid var(--text-color);
 border-radius: 10px;
 display: flex;
 flex-direction: column;
+background-color: var(--primary-color);
 
 }
 .education h2{
@@ -87,6 +89,7 @@ flex-direction: column;
 }
 
 .professional-experience{
+    background-color: var(--primary-color);
     margin-left: var(--left-margin);
     margin-right:0 ;
     display: flex;
@@ -105,4 +108,8 @@ flex-direction: column;
 .work-experience-title{
     margin-top: 5px;
     margin-left: var(--left-margin);
+    margin-bottom: 0;
+    font-family: var(--font-heading);
+    font-size: 20px;
+    color: var(--primary-color);
 }
