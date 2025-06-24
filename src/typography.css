@@ -82,9 +82,9 @@ html{
   );
 
   --font-heading: 'Oswald', sans-serif;
-  --font-heading-size: 20px;
+  --font-heading-size: 2rem;
   --font-subheading: 'Abel', sans-serif;
-  --font-subheading-size: 15px;
+  --font-subheading-size: 1rem;
   --font-body: 'Karma', serif;
 
   /* Base Font Sizes (Optional; override with fluid scale if using Utopia) */
