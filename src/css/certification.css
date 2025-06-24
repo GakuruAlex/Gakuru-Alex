@@ -1,0 +1,25 @@
+.certification{
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    height: 94vh;
+    max-width: 69vw;
+    
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+.certificate-img{
+   
+    width: 67vw;
+    height: 60vh;
+    border: solid var(--text-color);
+    border-radius: 10px;
+}
+.certification-details{
+    display: flex;
+    flex-direction: row;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+}
