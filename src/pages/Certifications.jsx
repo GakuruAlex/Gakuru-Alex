@@ -6,6 +6,7 @@ import Next from "../assets/next.png"
 import { useState } from "react";
 import all_certificates from "../resources/certificates";
 import Button from "../components/Button";
+import NavBar from "../components/NavBar";
 
 const handleClick=(index, button_name, setCurrentCertification, setCurrentIndex)=>{
     let new_index = index
@@ -38,7 +39,10 @@ const Certifications = ()=>{
                          />
 
            ) }
+
             <div className="certifications">
+                    <NavBar/>
+
                     <Certification  
                     image_url={currentCertification["image_url"]}
                     course={currentCertification["course"]}
