@@ -1,23 +1,28 @@
 .certification{
    
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     height: 94vh;
-    max-width: 69vw;
+    max-width: 78vw;
     
     background-color: var(--primary-color);
     border-radius: 10px;
+    margin-top: 20px;
 }
 .certificate-img{
    
-    width: 67vw;
-    height: 60vh;
-    border: solid var(--text-color);
-    border-radius: 10px;
+  max-width: 61.6vw;      
+  width: 100%; 
+  max-height: 70.56vh;   
+  height: 100%;  
+  margin: 2vh auto; 
+  display: block;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 .certification-details{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 .details{
     display: flex;
