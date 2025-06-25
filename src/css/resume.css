@@ -1,0 +1,116 @@
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 93.5em;
+    height: 97vh;
+    gap: 1px;
+    padding: 0;
+
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--text-color);
+    padding: 0;
+
+}
+.profile-container{
+    width:38em;
+    
+    height: 92vh;
+}
+
+.professional-summary{
+    background-color: var(--primary-color);
+    max-height: 10vh;
+max-width: 64.85em;
+width: 100%;
+color:var(--text-color);
+margin-top: 15px;
+margin-left: 5px;
+border: solid var(--text-color);
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+
+}
+.professional-summary-title{
+    font-family: var(--font-heading);
+    margin-left: var(--left-margin);
+    margin-bottom: 0;
+    margin-top: 2.5px;
+}
+.professional-summary-body{
+    font-family: var(--font-subheading);
+    margin-left: var(--left-margin);
+    margin-bottom: 0;
+}
+
+.education{
+max-height: 15vh;
+max-width: 64.85em;
+
+
+width: 100%;
+color:var(--text-color);
+margin: 5px 5px 5px 5px;
+border: solid var(--text-color);
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+background-color: var(--primary-color);
+
+}
+.education h2{
+    margin-top: 0;
+    margin-bottom: 0;
+    float: center;
+    margin-left: var(--left-margin);
+    font-family: var(--font-heading);
+    margin-top: 5px;
+}
+.education > div{
+    font-family: var(--font-subheading);
+    display: flex;
+    flex-direction: row;
+    gap: 40em;
+    margin-left: var(--left-margin);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.degree-course{
+    font-family: var(--font-subheading);
+    margin-left: var(--left-margin);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.professional-experience{
+    background-color: var(--primary-color);
+    margin-left: var(--left-margin);
+    margin-right:0 ;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 64.85em;
+    height: 65.5vh;
+    border: solid var(--text-color);
+    border-radius: 10px;
+    margin: 5px;
+    overflow-y: auto;
+
+    
+}
+
+.work-experience-title{
+    margin-top: 5px;
+    margin-left: var(--left-margin);
+    margin-bottom: 0;
+    font-family: var(--font-heading);
+    font-size: 20px;
+    color: var(--primary-color);
+}
