@@ -1,0 +1,13 @@
+.global-container{
+    max-height: var(--height-max);
+    display: flex;
+    flex-direction: row;
+    background-color: var(--primary-color);
+    
+}
+.projects-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 99vw;
+}
