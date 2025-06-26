@@ -1,40 +1,40 @@
 .nav_bar{
   width: 100%;
-  max-width: 55em;
-  display: flex;
+  max-width: 55vw;
   
 
 }
 .nav_bar ul{
     text-decoration: none;
+    display: flex;
+    flex-direction: row;
     padding-left: 0;
+    gap: 10vw;
     list-style-type: none;
-    max-height: 2em;
-    height: 100%;
+    margin-left: 10px;
+  
 }
 
 .navlink{
-    float: left;
-    padding-left: 0.75em;
-    padding-right: 0.5em;
+ 
+  
     max-height: 3em;
     height:100%;
     border-color: var(--icon-color);
     border-radius: 1px;
-      margin-right: 0.75em; /* space between list items */
-      margin-left: 0.75em;
+
 
 
 }
 .nav_bar a{
    font-family: var(--font-heading);
-   font-size: 20px;
+   font-size: var(--margin-20p);
    display: inline-block;
    text-decoration: none;
      padding: 0.6em 1.2em;
      background-color: var(--primary-color);
-     border-radius: 5px;
-     max-width: 5em;
+     border-radius: var(--margin-5p);
+     max-width: var(--size-5e);
      width: 100%;
      color: var(--text-color);
      border: solid var(--border-color);

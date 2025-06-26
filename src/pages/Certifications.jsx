@@ -25,20 +25,15 @@ const handleClick=(index, button_name, setCurrentCertification, setCurrentIndex)
 const Certifications = ()=>{
     const [currentIndex, setCurrentIndex] = useState(0);
     const [currentCertification, setCurrentCertification] = useState(all_certificates[currentIndex]);
+    const showNextButton =  (currentIndex >= 0 ) && (currentIndex < all_certificates.length - 1)
+    const showPrevButton = (currentIndex > 0 ) && (currentIndex <= all_certificates.length - 1)
  
     return (
         <div className="certifications-container">
 
             <Profile/>
-            { (currentIndex >= 0 ) && (currentIndex < all_certificates.length - 1) &&
-                    (<Button index={currentIndex} button_icon={Next} 
-                        setCurrentCertification={setCurrentCertification} 
-                        button_name="next"
-                        handleClick={handleClick}
-                            setCurrentIndex = {setCurrentIndex}
-                         />
+            
 
-           ) }
 
             <div className="certifications">
                     <NavBar/>
@@ -50,16 +45,23 @@ const Certifications = ()=>{
                     school={currentCertification["school"]}
                     skills={currentCertification["skills"]}
 
-                    />
-
-            </div>
-                  { (currentIndex > 0 ) && (currentIndex <= all_certificates.length - 1) &&
-                    (<Button index={currentIndex} button_icon={Previous} 
+                    nextButton = { showNextButton ?  (<Button index={currentIndex} button_icon={Next} 
+                        setCurrentCertification={setCurrentCertification} 
+                        button_name="next"
+                        handleClick={handleClick}
+                            setCurrentIndex = {setCurrentIndex}
+                         />)  : null}
+                    prevButton = { showPrevButton ? (<Button index={currentIndex} button_icon={Previous} 
                         setCurrentCertification={setCurrentCertification} 
                         button_name="prev"
                         handleClick={handleClick}
                             setCurrentIndex = {setCurrentIndex}
-                         />)}
+                         />) : null }
+
+                    />
+
+            </div>
+
         </div>
     )
 }
