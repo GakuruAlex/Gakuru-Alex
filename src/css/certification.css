@@ -1,21 +1,25 @@
+.certification-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: var(--left-margin);
+}
 .certification{
    
     display: flex;
     flex-direction: row;
-    height: 94vh;
-    max-width: 78vw;
+    flex-wrap: nowrap;
+    height: 69vh;
     
     background-color: var(--primary-color);
-    border-radius: 10px;
-    margin-top: 20px;
+    border-radius: var(--margin-10p);
 }
 .certificate-img{
-   
-  max-width: 61.6vw;      
+   margin-top: var(--left-margin);
+  max-width: 41.6vw;      
   width: 100%; 
-  max-height: 70.56vh;   
+  max-height: 60.56vh;   
   height: 100%;  
-  margin: 2vh auto; 
+  margin-left: 2vw; 
   display: block;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
@@ -23,8 +27,48 @@
 .certification-details{
     display: flex;
     flex-direction: column;
+    color: var(--primary-color);
 }
 .details{
+    
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+}
+.skills{
+    list-style-type: none;
+    padding: var(--size-15p);
+    background-color: var(--text-color);
+    margin-left: var(--left-margin);
+    font-family: var(--font-body);
+    color: var(--primary-color);
+}
+.skills li{
+        border: solid var(--border-color);
+        padding: var(--padding-5p);
+        margin: var(--size-15p);
+
+}
+.verify-link{
+     font-family: var(--font-heading);
+   font-size: var(--size-15p);
+   display: inline-block;
+   text-decoration: none;
+     background-color: var(--primary-color);
+     border-radius: .25em;
+     color: var(--text-color);
+     border: solid var(--border-color);
+     padding: 0;
+     height: 2.5vh;
+     width: 7vw;
+     margin-top: var(--margin-20p);
+     margin-left: var(--left-margin);
+     padding: var(--padding-5p);
+     margin-right: var(--left-margin);
+}
+
+.verify-link:hover{
+    background-color: var(--icon-color);
+    color:var(--text-color);
+    border: solid var(--text-color);
+    padding: var(--margin-10p);
 }
