@@ -1,0 +1,45 @@
+.nav_bar{
+  width: 100%;
+  max-width: 55vw;
+  
+
+}
+.nav_bar ul{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    gap: 10vw;
+    list-style-type: none;
+    margin-left: 10px;
+  
+}
+
+.navlink{
+ 
+  
+    max-height: 3em;
+    height:100%;
+    border-color: var(--icon-color);
+    border-radius: 1px;
+
+
+
+}
+.nav_bar a{
+   font-family: var(--font-heading);
+   font-size: var(--margin-20p);
+   display: inline-block;
+   text-decoration: none;
+     padding: 0.6em 1.2em;
+     background-color: var(--primary-color);
+     border-radius: var(--margin-5p);
+     max-width: var(--size-5e);
+     width: 100%;
+     color: var(--text-color);
+     border: solid var(--border-color);
+}
+.nav_bar a:hover{
+    background-color: var(--icon-color);
+      border: solid var(--text-color);
+}
