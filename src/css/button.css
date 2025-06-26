@@ -10,8 +10,8 @@
 }
 
 .nav-icon img {
-  width: 32px;
-  height: 32px;
+  width: var(--size-32p);
+  height: var(--size-32p);
   transition: transform 0.2s ease;
 }
 

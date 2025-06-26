@@ -22,6 +22,7 @@ html{
   --margin-20p: 1.25em;
   --margin-10p:0.625em;
   --size-15p:0.9375em;
+  --size-32p: 2em;
 
   --fluid-screen: 100vw;
   --fluid-bp: calc(
