@@ -17,7 +17,11 @@ html{
   --button-color:#FF7AC8;
     --fluid-min-width: 320;
   --fluid-max-width: 1240;
-  --left-margin: 10px;
+  --left-margin: 0.625em;
+  --padding-5p: 0.365em;
+  --margin-20p: 1.25em;
+  --margin-10p:0.625em;
+  --size-15p:0.9375em;
 
   --fluid-screen: 100vw;
   --fluid-bp: calc(
