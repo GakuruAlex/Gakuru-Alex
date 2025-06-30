@@ -14,25 +14,34 @@
 }
 .image-carousel{
   margin: var(--margin-10p);
-  max-height: 79vh;
+  max-height: 74vh;
   height: 100%;
   max-width: 30vw;
   width: 100%;
 }
 .image-carousel img{
   width: 70%;
-  max-height: 79vh;
+  max-height: 74vh;
   height: 95%;
 }
 .project{
   display: flex;
   flex-direction: row;
   width:62vw;
-  height: 78vh;
+  height: 76vh;
 }
 .project-details{
   max-width: 30vw;
   width: 100%;
+  background-color: var(--text-color);
+  margin: var(--margin-10p) 0 var(--margin-10p) 0;
+  color: var(--primary-color);
+}
+.project-details p, h2{
+  margin: var(--margin-10p) var(--margin-10p) var(--margin-10p) var(--margin-10p);
+}
+.project-details p{
+  font-size: var(--margin-20p);
 }
 
 .next-prev {
