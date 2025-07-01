@@ -1,8 +1,7 @@
 import "../css/project.css";
 import { useState } from "react";
 const Project = ({name, details, stacks, image_urls})=> {
-const [imgIndex, setImgIndex] = useState(0);
-const [currentImg, setCurrentImg] = useState(image_urls[imgIndex]);
+const [currentImg, setCurrentImg] = useState(image_urls[0]);
 
 const changeImage = (index) =>{
 setCurrentImg([image_urls[index]])
