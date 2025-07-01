@@ -24,6 +24,7 @@ html{
   --size-15p:0.9375em;
   --size-32p: 2em;
   --size-5e: 5em;
+  --height-max: 96vh;
 
   --fluid-screen: 100vw;
   --fluid-bp: calc(
