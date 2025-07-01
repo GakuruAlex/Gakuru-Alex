@@ -68,3 +68,30 @@
   transform: scale(1.4);
 
 }
+
+.stacks-list > ul{
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.stacks-list ul > li{
+  border: solid var(--border-color);
+  width: 10em;
+  height: 4vh;
+  padding: var(--margin-10p);
+  margin: var(--margin-10p) 0 0 0;
+}
+
+.project-details >  a{
+  text-decoration: none;
+  background-color: var(--primary-color);
+  margin: 40px ;
+  padding: var(--margin-10p);
+  border: solid var(--border-color);
+  
+}
+
+.project-details > a:hover{
+  background-color:var(--icon-color);
+  color: var(--text-color);
+}
