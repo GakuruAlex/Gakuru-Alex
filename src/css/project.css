@@ -10,6 +10,7 @@
   
 }
 
+
 .active, .dot:hover {
   background-color:var(--icon-color);
 }
