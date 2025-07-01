@@ -14,7 +14,8 @@ setCurrentImg([image_urls[index]])
                     <img src={currentImg} alt={name } />
                     <div className="image-dots">
                         {image_urls.map((image, index)=>(
-                            <span className="dot" onClick={()=>changeImage(index) } key={index}></span>
+                        <span className="dot" onClick={()=>changeImage(index) } key={index}></span>
+
 
                         ))}
                         
