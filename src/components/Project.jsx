@@ -24,8 +24,16 @@ setCurrentImg([image_urls[index]])
                 <div className="project-details">
                     <h2>{name}</h2>
                     <p>{details}</p>
-
-
+                    <div className="stacks-list">
+                        <h3>Skills used</h3>
+                        <ul>
+                        {
+                            stacks.map((stack, index)=>(
+                                <li key={index}> {stack}</li>
+                            ))
+                        }
+                        </ul>
+                    </div>
                 </div>
         </div>
     )
