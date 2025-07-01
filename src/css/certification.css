@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    height: 69vh;
+    height: 73vh;
     
     background-color: var(--primary-color);
     border-radius: 10px;
