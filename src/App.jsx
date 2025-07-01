@@ -14,7 +14,7 @@ function App() {
         <Routes>
         <Route path="/Gakuru-Alex/" element={<HomePage />} />
         <Route path="/Gakuru-Alex/certifications" element={<Certifications />} />
-        <Route path="/Gakuru-Alex/projectss" element={<Projects />} />
+        <Route path="/Gakuru-Alex/projects" element={<Projects />} />
         <Route path="/Gakuru-Alex/labs" element={<Labs />} />
         <Route path="/Gakuru-Alex/about" element={<About />} />
 

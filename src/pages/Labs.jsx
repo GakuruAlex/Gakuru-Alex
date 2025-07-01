@@ -1,6 +1,10 @@
-const Labs = () =>{
+import "../css/labs.css"
+const Labs = ()=>{
     return (
-        <h2>Labs</h2>
+        <div className="labs-container">
+            <h2>Under construction</h2>
+        </div>
     )
 }
+
 export default Labs;
