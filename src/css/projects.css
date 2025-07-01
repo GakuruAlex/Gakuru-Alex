@@ -1,24 +1,33 @@
+
 .global-container{
-    max-height: 97vh;
-    display: flex;
-    flex-direction: row;
-    background-color: var(--primary-color);
-    max-width: 99vw;
-    width: 100%;
+  width: 99vw;         
+  height: 96vh;        
+  max-width: 100vw;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;     
+  background-color: var(--text-color);
+  gap: 0.25em;              
+  padding: 0,25em;
+  box-sizing: border-box;
     
 }
+
 .projects-container{
-    display: flex;
-    flex-direction: column;
-    width: 98vw;
-    max-height: 95vw;
-    height: 100%;
-    margin-top: var(--margin-20p);
-    border: solid var(--text-color);
-    border-radius: var(--margin-10p);
+     width: 85vw;           
+  height: 92vh;
+  margin-top: 1.2em;
+  border: solid var(--border-color);
+  border-radius: 0.25em;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 .row-container{
+    background-color: var(--primary-color);
+    margin: var(--margin-20p) var(--margin-20p) var(--margin-20p) var(--margin-20p);
     display: flex;
     flex-direction: row;
 }
