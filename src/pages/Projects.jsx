@@ -24,8 +24,10 @@ const Projects = () =>{
             <div className="projects-container">
                 <NavBar/>
                 <div className="row-container">
+                {
+                currentIndex >= 0 &&  currentIndex < allProjects.length - 1 &&
                 <a className="next-prev" onClick={()=>setCurrentIndex((Index) => Index + 1)}><img src={Next} alt="next" /></a>
-                 
+                }
 
                 <Project 
                 key={currentIndex}
@@ -36,8 +38,11 @@ const Projects = () =>{
                 stacks={currentProject["stacks"]}
                 />
 
-              <a className="next-prev" onClick={()=>setCurrentIndex((currentIndex) => currentIndex - 1)}><img src={Prev} alt="prev" /></a>
+              {
+                currentIndex >0 && currentIndex <= allProjects.length -1 &&
+                <a className="next-prev" onClick={()=>setCurrentIndex((currentIndex) => currentIndex - 1)}><img src={Prev} alt="prev" /></a>
 
+              }
                 </div>
                
 
