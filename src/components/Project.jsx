@@ -1,6 +1,6 @@
 import "../css/project.css";
 import { useState } from "react";
-const Project = ({name, details, stacks, image_urls})=> {
+const Project = ({name, details, stacks, image_urls, git_url})=> {
 const [currentImg, setCurrentImg] = useState(image_urls[0]);
 
 const changeImage = (index) =>{
@@ -34,6 +34,7 @@ setCurrentImg([image_urls[index]])
                         }
                         </ul>
                     </div>
+                    <a href={git_url} target="_blank" className="github-url">GitHub link</a>
                 </div>
         </div>
     )
