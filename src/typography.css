@@ -1,15 +1,10 @@
 /* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 body{
-  background-color: var(--text-color);
+  background-color: var(--primary-color);
 }
-html{
-    overflow-y: hidden;
 
-}
 
 :root {
-  display: flex;
-  flex-direction: row;
   --primary-color: #FFFFFF;
   --border-color:#FF99D5;
   --text-color:#000000;

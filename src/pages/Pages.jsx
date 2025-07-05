@@ -4,6 +4,8 @@ import Page from "../components/Page";
 import { useEffect, useState } from "react";
 import Next from "../assets/next.png";
 import Prev from "../assets/previous.png";
+import "../css/certifications.css";
+
 const Pages = ({resources, pageName})=>{
     const [currentIndex, setCurrentIndex] = useState(0)
     let currentObject = resources[currentIndex]
@@ -11,25 +13,30 @@ const Pages = ({resources, pageName})=>{
         currentObject = resources[currentIndex]
 
     }, [currentIndex])
+
 return (
-    <div className="main-component">
-        <div className='profile-${pageName}'>
+    <div className="pages-component">
+        <div className={`profile-${pageName}`}>
             <Profile/>
         </div>
         <div className="content-component">
             <NavBar/>
-            <div className='${pageName}-container'>
+            <div className={`${pageName}-container`}>
                  {
                 currentIndex >= 0 &&  currentIndex < resources.length - 1 &&
                 <a className="next-prev" onClick={()=>setCurrentIndex((Index) => Index + 1)}><img src={Next} alt="next" /></a>
                 }
-
-                <Page 
-                page_name = {pageName}
-                name = {resources.name}
                 
-
-                />
+                    <Page 
+                    image_urls={currentObject["image_urls"]}
+                    course={currentObject["name"]}
+                    credential_link={currentObject["verify_link"]}
+                    details={currentObject["details"]}
+                    skills={currentObject["skills"]}
+                    id = {currentObject["id"]}
+                    page_name={pageName}
+                    />
+                
                 {
                 currentIndex >0 && currentIndex <= resources.length -1 &&
                 <a className="next-prev" onClick={()=>setCurrentIndex((currentIndex) => currentIndex - 1)}><img src={Prev} alt="prev" /></a>
