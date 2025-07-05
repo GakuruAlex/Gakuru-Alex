@@ -1,28 +1,41 @@
-.certifications-container{
+.content-component{
+    display: flex;
+    flex-direction: column;
+    width: 74vw;
+    margin-left: var(--margin-10p);
+    margin-top: var(--margin-20p);
+    box-shadow: 0 4px 12px 0 var(--border-color);
+}
+
+.pages-component {
     
-    background-color: var(--text-color);
-    max-width: 99vw;
-    width: 100%;
-    max-height: 94vh;
-    height: 100%;  
     display: flex;
     flex-direction: row;
     border: solid var(--text-color);
     border-radius: var(--margin-10p);
+    width:98vw;
+    height: 97vh;
     
    
 }
-.certifications-container > .profile{
-height: 93vh;
-width: 25vw;
-}
-.certifications{
-    display: flex;
-    flex-direction: column;
-    max-height: 94vh;
-    height: 100%;
-    border: solid var(--border-color);
-    margin-top: var(--margin-20p);
-    border-radius: 5px;
+.profile-certifications{
+height: 100%;
+width: 30vw;
 
 }
+.certifications-container{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    width:72vw;
+    height: 82vh;
+
+}
+.next-prev{
+    width: 2vw;
+    height: 4vh;
+    box-shadow: 0 8px 12px 0 var(--border-color);
+    align-self: center;
+
+}
+
