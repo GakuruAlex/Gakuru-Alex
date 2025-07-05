@@ -6,7 +6,7 @@ import web_technologies_cert from "../assets/web_technologies_cert.png"
 const certificates = [
   {     id: 0,
         name: "Foundational C# with Microsoft",
-        school: "Microsoft and freeCodeCamp",
+        details: "Microsoft and freeCodeCamp",
         skills: [
             "Object Oriented Programming", "C#", "Debugging C# apps", "Using control structures"
         ],
@@ -18,7 +18,7 @@ const certificates = [
         id: 1,
         verify_url: "https://www.linkedin.com/learning/certificates/bb11927dbaeade946311b1a057747d864d1abadb0811b8d27227cef5552b0769?trk=share_certificate",
         name: "Career Essentials in Cybersecurity",
-        school: "Microsoft and Linkedin",
+        details: "Microsoft and Linkedin",
         image_urls: [cybersecurity_essentials],
         skills: [
             "Understanding the Cybersecurity Threat Landscape",
@@ -29,7 +29,7 @@ const certificates = [
     },
      { id: 2,
         name: "Career Essentials in Software Development",
-        school: "Microsoft and Linkedin",
+        details: "Microsoft and Linkedin",
         verify_url: "https://www.linkedin.com/learning/certificates/0a77de711e14c431fa8add9e3ca384b5a0252aa34e76beb3fa5e261692f0890b?trk=share_certificate",
         image_urls: [software_development_essentials],
         skills: [
@@ -40,7 +40,7 @@ const certificates = [
 
    {    id: 3,
         name: "Microsoft Security, Compliance and Identity Fundamentals",
-        school: "Microsoft",
+        details: "Microsoft",
         verify_url: "https://learn.microsoft.com/api/credentials/share/en-us/AlexGakuru-5788/84B4BFF580DFEE11?sharingId=BA9117F72F5AB5B5",
         image_urls: [sc_900],
         skills: [
@@ -52,7 +52,7 @@ const certificates = [
         },
      { id: 4,
         name: "Software Engineering",
-        school: "Moringa School",
+        details: "Moringa School",
         verify_url: "#",
         image_urls: [web_technologies_cert],
         skills: [
