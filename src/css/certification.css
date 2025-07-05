@@ -35,7 +35,7 @@
     margin-top: var(--margin-20p);
 }
 
-.skills{
+.certifications-skills{
     list-style-type: none;
     padding: var(--margin-20p);
     background-color: var(--text-color);
@@ -43,31 +43,30 @@
     font-family: var(--font-body);
     color: var(--primary-color);
 }
-.skills li{
+.certifications-skills li{
         border: solid var(--border-color);
         padding: var(--padding-5p);
         margin: var(--size-15p);
 
 }
-.verify-link{
-     font-family: var(--font-heading);
+.certifications-verify-link{
+    font-family: var(--font-heading);
    font-size: var(--size-15p);
-   display: inline-block;
    text-decoration: none;
-     background-color: var(--primary-color);
+     background-color: var(--text-color);
      border-radius: .25em;
-     color: var(--text-color);
+     color: var(--primary-color);
      border: solid var(--border-color);
      padding: 0;
      height: 2.5vh;
-     width: 7vw;
+     width: 10vw;
      margin-top: var(--margin-20p);
-     margin-left: var(--left-margin);
+     margin-left: 3em;
      padding: var(--padding-5p);
      margin-right: var(--left-margin);
 }
 
-.verify-link:hover{
+.certifications-verify-link:hover{
     background-color: var(--icon-color);
     color:var(--text-color);
     border: solid var(--text-color);

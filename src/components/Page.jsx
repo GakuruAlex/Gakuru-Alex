@@ -35,8 +35,9 @@ const Page = ({skills, verify_link,  name, details, image_urls, page_name})=>{
             <div className={`${page_name}-details`}>
                 <h2>Name: {name}</h2>
                 <p>Details: {details}</p>
-                <a href={verify_link} className="verify-link">verify</a>
-                <ul>
+                
+                <ul className={`${page_name}-skills`}>
+                    <h2>Skills</h2>
                     {
                         skills.map((skill, index)=>(
                             <li key={index}>{skill}</li>
@@ -44,6 +45,7 @@ const Page = ({skills, verify_link,  name, details, image_urls, page_name})=>{
                         ))
                     }
                 </ul>
+                <a href={verify_link} className={`${page_name}-verify-link`}>Verify</a>
 
 
             </div>
