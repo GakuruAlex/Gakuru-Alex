@@ -1,39 +1,38 @@
-.certification-container{
-    display: flex;
-    flex-direction: column;
-    margin-left: var(--left-margin);
-}
-.certification{
-   
+.certifications{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    height: 73vh;
+    margin-left: var(--left-margin);
+    width: 72vw;
+    max-height: 97vh;
+    height: 100%;
+    gap: 0;
+}
+
+.certifications-images{
+   margin-top: var(--left-margin); 
+  width: 40vw; 
+  max-height: 80vh; 
+  height: 100%; 
+  margin-left: 0; 
+  box-shadow: 0 4px 12px var(--border-color);
+  border-radius: 1em;
+}
+.certifications-images > img{
+    width: 100%;
+    max-height: 80vh;
+    height: 100%;
     
-    background-color: var(--primary-color);
-    border-radius: 10px;
 }
-.certificate-img{
-   margin-top: var(--left-margin);
-  max-width: 41.6vw;      
-  width: 100%; 
-  max-height: 60.56vh;   
-  height: 100%;  
-  margin-left: 2vw; 
-  display: block;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-}
-.certification-details{
+.certifications-details{
     display: flex;
     flex-direction: column;
     color: var(--primary-color);
+    background-color: var(--text-color);
+    box-shadow:  0 4px 12px var(--border-color);
+    max-width: 27vw;
+    width: 100%;
 }
-.details{
-    
-    display: flex;
-    flex-direction: row;
-}
+
 .skills{
     list-style-type: none;
     padding: var(--margin-20p);
