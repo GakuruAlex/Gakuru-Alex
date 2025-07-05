@@ -1,19 +1,22 @@
 import { Route, Routes, HashRouter} from 'react-router-dom';
 import "./typography.css";
-import Certifications from './pages/Certifications';
-import { createBrowserHistory } from "history";
+
 import HomePage from './pages/HomePage';
-import Projects from "./pages/Projects";
+
 import About from "./pages/About";
 import Labs from "./pages/Labs";
+import all_certificates from "./resources/certificates";
+import allProjects from './resources/allProjects';
+import Pages from './pages/Pages';
+
 function App() {
 
   return (
 <HashRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/certifications" element={<Certifications />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="/certifications" element={<Pages resources = {all_certificates}  pageName = "certifications"/> } />
+        <Route path="/projects" element={<Pages resources={allProjects}  pageName="all-projects" />} />
         <Route path="/labs" element={<Labs />} />
         <Route path="/about" element={<About />} />
       </Routes>
