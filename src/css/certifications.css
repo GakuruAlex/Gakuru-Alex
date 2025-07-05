@@ -1,20 +1,30 @@
 .content-component{
     display: flex;
     flex-direction: column;
-    width: 74vw;
+    max-width: 74vw;
+    width: 100%;
     margin-left: var(--margin-10p);
     margin-top: var(--margin-20p);
-    box-shadow: 0 4px 12px 0 var(--border-color);
+    box-shadow: 0 -4px 4px -2px var(--border-color), 
+                -4px 0 4px -2px var(--border-color);  
+    max-height: 94vh;
+    height: 100%;
 }
 
 .pages-component {
     
     display: flex;
     flex-direction: row;
-    border: solid var(--text-color);
+    box-shadow:0 -4px 4px -2px var(--border-color),
+                4px 0 4px -2px var(--border-color),
+                4px 4px 4px 0 var(--border-color),
+                4px 4px 4px 0 var(--border-color)
+                ;
     border-radius: var(--margin-10p);
-    width:98vw;
-    height: 97vh;
+    max-width:99vw;
+    width: 100%;
+    max-height: 99vh;
+    height: 100%;
     
    
 }
