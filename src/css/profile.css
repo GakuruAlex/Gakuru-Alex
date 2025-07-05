@@ -3,7 +3,7 @@
   max-width: 25em;
   width: 100%;
   height: 100%;
-  max-height: 93vh;
+  max-height: 94vh;
   border-radius: 1em;
   box-sizing: border-box;
   margin: 1em;
@@ -138,7 +138,8 @@
     margin-left: 3em;
 }
 .contact{
-    height:35vh;
+    max-height:37vh;
+    height: 100%;
     max-width: 25em;
     width: 100%;
     background-color: var(--text-color);
@@ -163,10 +164,10 @@
   align-items: center;
   gap: 0.5em;
   text-decoration: none;
-  max-width: 100%;        /* Removed fixed max-width for fluid design */
-  width: auto;            /* Let it size naturally */
-  padding: 0.5em 1em;     /* Optional padding for better touch targets */
-  box-sizing: border-box; /* Ensures padding doesn’t overflow width */
+  max-width: 100%;       
+  width: auto;           
+  padding: 0.5em 1em;     
+  box-sizing: border-box; 
   font-size: 1rem;
 }
 
