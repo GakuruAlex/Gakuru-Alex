@@ -24,7 +24,7 @@ const Profile = () => {
             
             </div>
             <div className="contact">
-                <h3 className="contact-heading">Contact</h3>
+                <h3 className="contact-heading">Connect with me</h3>
                 <a href="https://linkedin.com/in/alexgakuru" className="icon-link" target="_blank"><span>Linked</span><img src={LinkedinLogo} alt="linkedin link" /></a>
                 <a href="https://github.com/GakuruAlex" className="icon-link" target="_blabk"><span>GitHub</span><img src={GithubLogo} alt="GitHub link" /></a>
                 <a href="https://X.com/GakuruAlex" className="icon-link" target="_blank"><span>Twitter</span><img src={TwitterLogo} alt="X link" /></a>
