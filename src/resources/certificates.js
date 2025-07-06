@@ -53,7 +53,7 @@ const certificates = [
      { "id": 4,
         "name": "Software Engineering",
         "details": "Moringa School",
-        "verify_url": "#",
+        "verify_url": "",
         "image_urls": [web_technologies_cert],
         "skills": [
             "React.js", "RESTful API development", "Active Record", "MVC Architecture", "JSON data handling"
