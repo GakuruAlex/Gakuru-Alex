@@ -100,6 +100,6 @@
 .image-dots{
     margin-left: var(--left-margin);
 }
-.dot:hover {
+.dots:hover {
   background-color: var(--icon-color);
 }
