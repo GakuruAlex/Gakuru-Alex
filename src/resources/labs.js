@@ -4,8 +4,6 @@ import crAPI1 from "../assets/crAPI.png";
 import crAPI2 from "../assets/crAPI_b.png";
 import OWASP1 from "../assets/owasp_10_c.png";
 import OWASP2 from "../assets/owasp_10_d.png";
-import TryHackMe from "../assets/tryhackme.png";
-
 
 const labs = [
 {
@@ -18,10 +16,10 @@ const labs = [
 },
 {
     "id": 1,
-    "name": "OWASP Top 10",
+    "name": "OWASP Top 10 2021",
     "skills": ["Web Application Security Awereness", "Authentication & Authorization", "Velnerability Scanning and Penetration Testing", "Web Application Testing"],
     "details":"OWASP Top 10 (2021), highlights the most critical security risks to web applications, based on real-world data and expert consensus:",
-    "verify_url": "",
+    "verify_url": "https://tryhackme.com/room/owasptop102021?utm_source=linkedin&utm_medium=social&utm_campaign=social_share&utm_content=utmContent",
     "image_urls": [OWASP1, OWASP2]
 
 },
