@@ -9,25 +9,30 @@
 }
 
 .projects-images{
-   margin-top: var(--left-margin); 
+   margin-top: var(--margin-20p); 
   width: 30vw; 
-  max-height: 80vh; 
+  max-height: 74vh; 
   height: 100%; 
   margin-left: 0; 
   box-shadow: 0 4px 12px var(--border-color);
   border-radius: 1em;
+
+
 }
 .projects-images > img{
     width: 100%;
     height: 50vh;
     display: flex;
     flex-direction: column;
+    margin: var(--left-margin);
+
 
     
 }
 .projects-image > img{
     width: 27vw;
     height: 70vh;
+    margin: var(--margin-20p);
     
 }
 .projects-details{
@@ -55,6 +60,7 @@
         border: solid var(--border-color);
         padding: var(--padding-5p);
         margin: var(--size-15p);
+        max-width: 10em;
 
 }
 .projects-verify-link{
@@ -91,6 +97,9 @@
   transition: background-color 0.6s ease;
 }
 
+.image-dots{
+    margin-left: var(--left-margin);
+}
 .dot:hover {
   background-color: var(--icon-color);
 }
