@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import Next from "../assets/next.png";
 import Prev from "../assets/previous.png";
 import "../css/certifications.css";
-
+import "../css/projects.css";
 const Pages = ({resources, pageName})=>{
     const [currentIndex, setCurrentIndex] = useState(0)
     let currentObject = resources[currentIndex]
@@ -24,12 +24,12 @@ return (
             <div className={`${pageName}-container`}>
                  {
                 currentIndex >= 0 &&  currentIndex < resources.length - 1 &&
-                <a className="next-prev" onClick={()=>setCurrentIndex((Index) => Index + 1)}><img src={Next} alt="next" /></a>
+                <a className={`${pageName}-next-prev`} onClick={()=>setCurrentIndex((Index) => Index + 1)}><img src={Next} alt="next" /></a>
                 }
                 
                     <Page 
                     image_urls={currentObject["image_urls"]}
-                    course={currentObject["name"]}
+                    name={currentObject["name"]}
                     credential_link={currentObject["verify_link"]}
                     details={currentObject["details"]}
                     skills={currentObject["skills"]}
@@ -39,7 +39,7 @@ return (
                 
                 {
                 currentIndex >0 && currentIndex <= resources.length -1 &&
-                <a className="next-prev" onClick={()=>setCurrentIndex((currentIndex) => currentIndex - 1)}><img src={Prev} alt="prev" /></a>
+                <a className={`${pageName}-next-prev`} onClick={()=>setCurrentIndex((currentIndex) => currentIndex - 1)}><img src={Prev} alt="prev" /></a>
 
               }
 
