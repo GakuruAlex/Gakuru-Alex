@@ -30,7 +30,7 @@ return (
                     <Page 
                     image_urls={currentObject["image_urls"]}
                     name={currentObject["name"]}
-                    credential_link={currentObject["verify_link"]}
+                    verify_link={currentObject["verify_url"]}
                     details={currentObject["details"]}
                     skills={currentObject["skills"]}
                     id = {currentObject["id"]}
