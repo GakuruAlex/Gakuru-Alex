@@ -60,7 +60,7 @@
         border: solid var(--border-color);
         padding: var(--padding-5p);
         margin: var(--size-15p);
-        max-width: 10em;
+        max-width: 10vw;
 
 }
 .projects-verify-link{

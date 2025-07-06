@@ -46,6 +46,8 @@ width: 30vw;
     height: 4vh;
     box-shadow: 0 8px 12px 0 var(--border-color);
     align-self: center;
+     transition: transform 0.2s ease, cursor 0.2s ease;
+     margin: 8px;
 
 }
 .projects-next-prev > img{
@@ -54,6 +56,10 @@ width: 30vw;
     box-shadow: 0 8px 12px 0 var(--border-color);
     align-self: center;
 
+}
+.projects-next-prev:hover{
+    cursor: pointer;
+    transform: scale(1.3);
 }
 
 
