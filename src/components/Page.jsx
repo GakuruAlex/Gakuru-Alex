@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import "../css/certification.css";
+import "../css/project.css";
 
-const Page = ({skills, verify_link,  name, details, image_urls, page_name})=>{
+const Page = ({skills, verify_link, name, details, image_urls, page_name})=>{
     const [imgIndex, setImgIndex] = useState(0)
     let currentImg = image_urls[imgIndex]
 
@@ -19,7 +20,7 @@ const Page = ({skills, verify_link,  name, details, image_urls, page_name})=>{
                 }
 
                 {
-                    image_urls.length > 1 && <div> 
+                    image_urls.length > 1 && <div className={`${page_name}-image`}> 
                         <img src={currentImg} key={imgIndex} />
                         <div className="image-dots">
                         {image_urls.map((image, index)=>(
