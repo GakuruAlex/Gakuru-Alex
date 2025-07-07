@@ -1,15 +1,15 @@
 import { useState, useEffect } from "react";
 import "../css/certification.css";
 import "../css/project.css";
+import "../css/lab.css";
+
 
 const Page = ({skills, verify_link, name, details, image_urls, page_name})=>{
     const [imgIndex, setImgIndex] = useState(0)
-    let currentImg = image_urls[imgIndex]
-
+    const currentImg = image_urls[imgIndex]
     useEffect(()=>{
-        currentImg = image_urls[imgIndex]
-    }, [imgIndex])
-
+        setImgIndex(0)
+    }, [name])
 
     return(
         <div className={page_name}>
@@ -21,7 +21,7 @@ const Page = ({skills, verify_link, name, details, image_urls, page_name})=>{
 
                 {
                     image_urls.length > 1 && <div className={`${page_name}-image`}> 
-                        <img src={currentImg} key={imgIndex} />
+                        <img src={currentImg} key={imgIndex}/>
                         <div className="image-dots">
                         {image_urls.map((image, index)=>(
                         <span className="dot" onClick={()=>setImgIndex(index) } key={index}></span>
@@ -35,7 +35,7 @@ const Page = ({skills, verify_link, name, details, image_urls, page_name})=>{
             </div>
             <div className={`${page_name}-details`}>
                 <h2>Name: {name}</h2>
-                <p>Details: {details}</p>
+                <p>{details}</p>
                 
                 <ul className={`${page_name}-skills`}>
                     <h2>Skills</h2>
@@ -46,7 +46,9 @@ const Page = ({skills, verify_link, name, details, image_urls, page_name})=>{
                         ))
                     }
                 </ul>
-                <a href={verify_link} className={`${page_name}-verify-link`}>Verify</a>
+                {
+                    verify_link && (<a href={verify_link} className={`${page_name}-verify-link`} target="_blank">Verify</a>)
+                }
 
 
             </div>
