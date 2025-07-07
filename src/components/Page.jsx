@@ -35,7 +35,7 @@ const Page = ({skills, verify_link, name, details, image_urls, page_name})=>{
             </div>
             <div className={`${page_name}-details`}>
                 <h2>Name: {name}</h2>
-                <p>Details: {details}</p>
+                <p>{details}</p>
                 
                 <ul className={`${page_name}-skills`}>
                     <h2>Skills</h2>
@@ -46,7 +46,9 @@ const Page = ({skills, verify_link, name, details, image_urls, page_name})=>{
                         ))
                     }
                 </ul>
-                <a href={verify_link} className={`${page_name}-verify-link`}>Verify</a>
+                {
+                    verify_link && (<a href={verify_link} className={`${page_name}-verify-link`} target="_blank">Verify</a>)
+                }
 
 
             </div>
