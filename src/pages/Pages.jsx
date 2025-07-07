@@ -9,11 +9,10 @@ import "../css/projects.css";
 import "../css/labs.css";
 const Pages = ({resources, pageName})=>{
     const [currentIndex, setCurrentIndex] = useState(0)
-    let currentObject = resources[currentIndex]
+    const  currentObject = resources[currentIndex]
     useEffect(()=>{
-        currentObject = resources[currentIndex]
-
-    }, [currentIndex])
+        setCurrentIndex(0)
+    }, [resources, pageName])
 
 return (
     <div className="pages-component">
@@ -25,7 +24,7 @@ return (
             <div className={`${pageName}-container`}>
                  {
                 currentIndex >= 0 &&  currentIndex < resources.length - 1 &&
-                <a className={`${pageName}-next-prev`} onClick={()=>setCurrentIndex((Index) => Index + 1)}><img src={Next} alt="next" /></a>
+                <a className={`${pageName}-next-prev`} onClick={()=>setCurrentIndex((Index) => Index + 1)}><img src={Next} alt="next" key={currentIndex}/></a>
                 }
                 
                     <Page 
@@ -40,7 +39,7 @@ return (
                 
                 {
                 currentIndex >0 && currentIndex <= resources.length -1 &&
-                <a className={`${pageName}-next-prev`} onClick={()=>setCurrentIndex((currentIndex) => currentIndex - 1)}><img src={Prev} alt="prev" /></a>
+                <a className={`${pageName}-next-prev`} onClick={()=>setCurrentIndex((currentIndex) => currentIndex - 1)} key={currentIndex}><img src={Prev} alt="prev" /></a>
 
               }
 
