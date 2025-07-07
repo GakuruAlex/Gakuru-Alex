@@ -1,12 +1,15 @@
 .profile{
-  background-color: var(--primary-color);
+  box-shadow:0 2px 4px 0 var(--border-color),
+              0 2px 4px 0 var(--border-color),
+              0 2px 4px 0 var(--border-color),
+              0 2px 4px 0 var(--border-color);
   max-width: 25em;
   width: 100%;
-  height: auto;
+  height: 100%;
+  max-height: 94vh;
   border-radius: 1em;
-  box-sizing: border-box;
-  margin: 1em;
-  border: solid var(--text-color);
+  margin-left: 0;
+  margin-top: 1em;
   display: flex;
   flex-direction: column;
 
@@ -57,19 +60,7 @@
        margin: 0;
     
 }
-.contact{
-     height: 100%;
-    max-height: 47vh;
-    max-width: 10em;
-    width: 100%;
-    background-color: var(--text-color);
-    margin-bottom: 5px;
-    display: flex;
-    flex-direction: column;
-    border-radius: 5px;
-    flex-wrap: nowrap;
 
-}
 .icon-link {
   display: flex;
   align-items: center; /* Vertically centers text and icon */
@@ -149,16 +140,15 @@
     margin-left: 3em;
 }
 .contact{
-     height: 100%;
-    max-height: 37.5vh;
+    max-height:37vh;
+    height: 100%;
     max-width: 25em;
     width: 100%;
     background-color: var(--text-color);
-    margin-bottom: 5px;
     display: inline-flex;
     flex-direction: column;
     box-sizing: border-box;
-    border-radius: 5px;
+    border-radius: 1em;
     border: solid var(--primary-color);
 
 }
@@ -176,10 +166,10 @@
   align-items: center;
   gap: 0.5em;
   text-decoration: none;
-  max-width: 100%;        /* Removed fixed max-width for fluid design */
-  width: auto;            /* Let it size naturally */
-  padding: 0.5em 1em;     /* Optional padding for better touch targets */
-  box-sizing: border-box; /* Ensures padding doesn’t overflow width */
+  max-width: 100%;       
+  width: auto;           
+  padding: 0.5em 1em;     
+  box-sizing: border-box; 
   font-size: 1rem;
 }
 

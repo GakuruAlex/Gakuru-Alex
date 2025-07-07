@@ -8,29 +8,30 @@ import Break from "../assets/pomodoro_break.png";
 const allProjects = [
     {
         "id": 0,
-        "projectName": "Quiz App",
-        "git_url": "https://github.com/GakuruAlex/quiz_app_v_2",
+        "name": "Quiz App",
+        "verify_url": "https://github.com/GakuruAlex/quiz_app_v_2",
         "details": "This ia quiz project. The questions are fetched from Open Trivia Api with params: amount=10, category=18 and type=boolean. Its a True or False system. True is marked by a button with ✓ and False with 'x'. If the answer is correct the canvas changes to green else red before the next question and score is increased by one.",
         "image_urls": [Get_Right, Get_Wrong],
-        "stacks": ["Python", "API", "GitHub"]
+        "skills": ["Python", "API", "GitHub"]
     },
     {
         "id": 1,
-        "projectName": "FlashCardApp",
+        "name": "FlashCardApp",
         "details": "This Python application helps you learn a new language by displaying flashcards with the word in one language on the front and its translation in the other language on the back. You can customize the application with your own flashcards stored in a CSV file.",
         "image_urls": [French, English],
-        "git_url": "https://github.com/GakuruAlex/FlashCardApp",
-        "stacks": ["Python", "GitHub"]
+        "verify_url": "https://github.com/GakuruAlex/FlashCardApp",
+        "skills": ["Python", "GitHub"]
 
 
     },
+    
     {
         "id": 2,
-        "projectName":"Pomodoro",
-        "git_url":"https://github.com/GakuruAlex/Pomodoro",
+        "name":"Pomodoro",
+        "verify_url":"https://github.com/GakuruAlex/Pomodoro",
         "details": "This project is a simple productivity timer based on the Pomodoro Technique—a time management method that breaks work into intervals, traditionally 25 minutes long, separated by short breaks. It's designed to help users stay focused and maintain consistent productivity.",
         "image_urls": [Work, Break],
-        "stacks": ["Python", "Tkinter", "GitHub"]
+        "skills": ["Python", "Tkinter", "GitHub"]
 
     }
 ]
