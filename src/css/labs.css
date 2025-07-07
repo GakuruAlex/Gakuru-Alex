@@ -1,3 +1,63 @@
-.labs-container > h2{
-    color: var(--primary-color);
+.content-component{
+    display: flex;
+    flex-direction: column;
+    max-width: 74vw;
+    width: 100%;
+    margin-left: var(--margin-10p);
+    margin-top: var(--margin-20p);
+    box-shadow: 0 -4px 4px -2px var(--border-color), 
+                -4px 0 4px -2px var(--border-color);  
+    max-height: 94vh;
+    height: 100%;
 }
+
+.labs-component {
+    
+    display: flex;
+    flex-direction: row;
+    box-shadow:0 -4px 4px -2px var(--border-color),
+                4px 0 4px -2px var(--border-color),
+                4px 4px 4px 0 var(--border-color),
+                4px 4px 4px 0 var(--border-color)
+                ;
+    border-radius: var(--margin-10p);
+    max-width:99vw;
+    width: 100%;
+    max-height: 99vh;
+    height: 100%;
+    
+   
+}
+.profile-certifications{
+height: 100%;
+width: 30vw;
+
+}
+.labs-container{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    width:72vw;
+    height: 82vh;
+
+}
+.labs-next-prev{
+    width: 2vw;
+    height: 4vh;
+    box-shadow: 0 8px 12px 0 var(--border-color);
+    align-self: center;
+    transition: transform 0.2s ease, cursor 0.2s ease;
+}
+.labs-next-prev > img{
+    width: 2vw;
+    height: 4vh;
+    box-shadow: 0 8px 12px 0 var(--border-color);
+    align-self: center;
+
+}
+.labs-next-prev:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+}
+
+
