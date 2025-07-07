@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import "../css/certification.css";
 import "../css/project.css";
+import "../css/lab.css";
+
 
 const Page = ({skills, verify_link, name, details, image_urls, page_name})=>{
     const [imgIndex, setImgIndex] = useState(0)
