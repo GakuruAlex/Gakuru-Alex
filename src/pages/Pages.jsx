@@ -6,6 +6,7 @@ import Next from "../assets/next.png";
 import Prev from "../assets/previous.png";
 import "../css/certifications.css";
 import "../css/projects.css";
+import "../css/labs.css";
 const Pages = ({resources, pageName})=>{
     const [currentIndex, setCurrentIndex] = useState(0)
     let currentObject = resources[currentIndex]
