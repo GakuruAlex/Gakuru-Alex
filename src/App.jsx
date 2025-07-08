@@ -19,7 +19,7 @@ function App() {
         <Route path="/certifications" element={<Pages resources = {all_certificates}  pageName = "certifications"/> } />
         <Route path="/projects" element={<Pages resources={allProjects}  pageName="projects" />} />
         <Route path="/labs" element={<Pages resources={labs} pageName="labs" />} />
-        <Route path="/about" element={<About resources="" pageName="about" />} />
+        <Route path="/about" element={<About resources="hello" pageName="about" />} />
       </Routes>
     </HashRouter>
     
